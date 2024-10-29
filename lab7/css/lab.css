@@ -4,6 +4,19 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px #d96060;
+    background-color: #77682d;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+
+#content {
+  background-color: antiquewhite;
+  border: #d96060;
+}
+
+.name {
+  height: 200px;
+  width: 500px;
+}
+
