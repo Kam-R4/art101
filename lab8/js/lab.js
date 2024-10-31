@@ -1,21 +1,27 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
-
-// Constants
+// index.js - callback functions
+// Author: Kam Ren
+// Date: 30 October
 
 // Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+function addingNumber(x){
+  return( x + 1);
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// test function
+console.log("What is 2+1?: ", addingNumber(2));
 
-// let's get this party started
-main();
+myArray = [10, 20, 30, 40]
+console.log("My orginal Array: ", myArray);
+
+var results = myArray.map(addingNumber);
+// should return [11, 21, 31, 41]
+console.log("Adding 1 to my array: ", results);
+
+var results = myArray.map(function(x){
+  return x **2;
+})
+// should return [100, 400, 900, 1600]
+console.log("Squaring my array: ", results)
+
+
+ 
