@@ -22,6 +22,5 @@ var results = myArray.map(function(x){
 })
 // should return [100, 400, 900, 1600]
 console.log("Squaring my array: ", results)
-
-
+ 
  
