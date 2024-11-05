@@ -1,21 +1,33 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - create a button
+// Author: Kam Ren 
+// Date: 4 November 
 
-// Constants
+// Adding a button to challenge section
 
-// Functions
+$("#challenge").append("<button id='button-challenge'>Toggle Highlight</button>");
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+// add a click listener to the challenge button
+$("#button-challenge").click(function(){
+  
+  $("#challenge").css({"background-color": "yellow"});
+});
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// Button for problem section
 
-// let's get this party started
-main();
+$("#problems").append("<button id='button-problems'>Toggle Font</button>");
+
+// add listener to problem button
+$("#button-problems").click(function(){
+
+$("#problems").css({"font-family": "Arial, Helvetica, sans-serif", "font-size": "200%"})
+
+});
+
+// Button for Results
+
+
+$("#button-results").click(function(){
+
+$("#results").toggle();
+
+});
