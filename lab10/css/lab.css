@@ -28,12 +28,24 @@
     font-family: sans-serif;
     font-size: 0.8em;
   }
+
+  .text2 p {
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: darkgray;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+  }
   
-  .text:nth-child(odd){
+  .text2:nth-child(odd){
     text-align: right;
   }
 
-  text:nth-child(odd) p {
+  text2:nth-child(odd) p {
     background-color: aqua;
     color: bisque;
   }
