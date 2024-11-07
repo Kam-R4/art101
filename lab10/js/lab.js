@@ -31,8 +31,8 @@ $("#output").append('<div class="text"><p>' + newText + '</p></div>');
 // button for inputing
 $("#my-button").click(function(){
 
-var input = $("#my-field").val();
+    var input = $("#my-field").val();
 
 
-$("#output").append('<div class="text2"><p>' + input + '</p></div>')
+    $("#output").append('<div class="text2"><p>' + input + '</p></div>')
 });
