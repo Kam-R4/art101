@@ -9,8 +9,10 @@
 
 // Sorts the characters of a string in alphabetical order.
 function sortString(inputString) {
+
   // We have to convert our string to an array and back again to sort it
   return inputString.split('').sort().join('');
+  
 }
 
 // click listener for button

@@ -2,20 +2,50 @@
 // Author: Your Name
 // Date:
 
-// Constants
+// elementArray
+elementArray =[
+    {
 
-// Functions
+    },
+    {
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+    },
+    {
+
+    },
+    {
+      
+    }
+]
+
+ //return Element 
+// sortingHat function depending on length
+function sortingHat(str){
+  len = str.length;
+  mod = len % 4;
+  if (mod == 0){
+    return "Fire"
+  }
+  else if (mod == 1){
+    return "Water"
+  }
+  else if (mod == 2){
+    return "Earth"
+  }
+  else if (mod == 3){
+    return "Wind"
+  }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+//Button
+$("#button").click(function(){
 
-// let's get this party started
-main();
+const userHouse = $("#input").val();
+
+userHouseSorted = sortingHat(userHouse);
+
+$("#output").html("<p>The crystal ball has identified your element " + userHouseSorted + "</p>" );
+
+});
+
+
