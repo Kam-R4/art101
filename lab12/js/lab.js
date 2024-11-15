@@ -2,21 +2,6 @@
 // Author: Your Name
 // Date:
 
-// elementArray
-elementArray =[
-    {
-        title
-    },
-    {
-
-    },
-    {
-
-    },
-    {
-      
-    }
-]
 
  //return Element 
 // sortingHat function depending on length
