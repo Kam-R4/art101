@@ -14,6 +14,9 @@ function oneLongString(str){
   
    } 
    //if multiple of 5
+   else if(i% 7 == 0) { 
+    console.log("Boom");
+  } 
    else if (i% 5 == 0) { 
      console.log("Buzz");
    } 
