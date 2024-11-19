@@ -7,3 +7,12 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  #output {
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px black;
+    min-height: 100px;
+  }

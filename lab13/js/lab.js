@@ -6,16 +6,31 @@
 
 // Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+function oneLongString(str){
+  for (i=1; i <= 200; i++) { 
+    //if multiple of 15  
+   if (i% 15 == 0) {
+     console.log("FizzBuzz");
+  
+   } 
+   //if multiple of 5
+   else if (i% 5 == 0) { 
+     console.log("Buzz");
+   } 
+    //if multiple of 3
+   else if (i% 3 == 0) {
+     console.log("Fizz");
+   } else {
+     console.log(i);
+   }
+  }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+};
 
-// let's get this party started
-main();
+
+$("#my-button").click(function(){
+
+  $("#output").html(oneLongString);
+ 
+    
+});
