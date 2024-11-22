@@ -9,7 +9,8 @@ $("#challenge").append("<button id='button-challenge'>Toggle Highlight</button>"
 // add a click listener to the challenge button
 $("#button-challenge").click(function(){
   
-  $("#challenge").css({"background-color": "yellow"});
+  $(this).parent().toggleClass("special");
+  
 });
 
 // Button for problem section
@@ -19,7 +20,7 @@ $("#problems").append("<button id='button-problems'>Toggle Font</button>");
 // add listener to problem button
 $("#button-problems").click(function(){
 
-$("#problems").css({"font-family": "Arial, Helvetica, sans-serif", "font-size": "200%"})
+$(this).parent().toggleClass("font");
 
 });
 
