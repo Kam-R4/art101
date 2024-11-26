@@ -1,21 +1,29 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - API
+// Author: Kam
+// Date: 25 November
 
 // Constants
 
 // Functions
+$("#activate").click(function(){
+$.ajax({
+  // The URL for the request 
+  url: "https://yesno.wtf/api",
+  // The data to send (will be converted to a query string)
+  data: { id: 123},
+  // Whether this is a POST or GET request 
+  type: "GET",
+  // The type of data we expect back 
+  dataType : "json",
+})
+// If the request succeeds// If the request succeeds
+.done(function( data ) { 
+  console.log(data);
+  $("#output").append("<h1>" + data.answer);
+  $("#output").append("<img src='" + data.image + "'>")
+});
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+});
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
 
-// let's get this party started
-main();
+
