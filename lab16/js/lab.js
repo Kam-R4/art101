@@ -8,24 +8,29 @@
 
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
 // Using the core $.ajax() method
-$.ajax({
-  // The URL for the request (from the api docs)
-  url: "https://cors-anywhere.herokuapp.com/https://xkcd.com/3018/info.0.json",
-  // Whether this is a POST or GET request
-  type: "GET",
-  // The type of data we expect back
-  //dataType : "jsonp",
-  dataType: "json", 
-  // What do we do when the api call is successful
-  //   all the action goes in here
-  success: function(data) {
-      // do stuff
-      console.log(data);
-    $("#output").append("<img src='" + data.img + "'>")
+
+let endpoint = "https://api.chucknorris.io/jokes/random"
+
+let ajaxConfig = {
+  url: endpoint,  // API URL
+  method: "GET", // HTTP method
+  contentType: "application/json", // Payload type
+  data: { 
+    
   },
-  // What we do if the api call fails
-  error: function (jqXHR, textStatus, errorThrown) { 
-      // do stuff
-      console.log("Error:", textStatus, errorThrown);
-  }
-})
+  success: function(data) { // Success handler
+    console.log(data); 
+    record = data[3];
+    $("#output").append("<h1>" + data.created_at);
+    $("#output").append(data.value);
+    $("#output").append("<img src='" + data.icon_url  + "'>")
+  }, 
+  error: function(xhr, status, error) { // Error handler
+    console.error(error); 
+  } 
+};
+
+
+
+// send the AJAX request
+$.ajax(ajaxConfig);
